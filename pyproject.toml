@@ -1,0 +1,26 @@
+[project]
+name = "sdh"
+version = "0.1"
+description = "CLI tool to help with SDHs (internal support developer help requests)"
+readme = "README.md"
+authors = [{name = "Maurizio Branca"}]
+license = {text = "Apache-2.0"}
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "click"
+]
+
+[project.urls]
+Homepage = "https://github.com/zmoog/sdh"
+Changelog = "https://github.com/zmoog/sdh/releases"
+Issues = "https://github.com/zmoog/sdh/issues"
+CI = "https://github.com/zmoog/sdh/actions"
+
+[project.entry-points.console_scripts]
+sdh = "sdh.cli:cli"
+
+[project.optional-dependencies]
+test = ["pytest"]
